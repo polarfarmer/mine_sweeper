@@ -73,6 +73,24 @@ public class MineSweeperGame extends JFrame {
     private void placeMines() {
         Random random = new Random();
 
+        for (int i = 0; i < TOTAL_MINES; i++) {
+            int x = random.nextInt(GRID_SIZE);
+            int y = random.nextInt(GRID_SIZE);
+
+            if (!mines[x][y]) {
+                mines[x][y] = true;
+            }
+            else {
+                i -= 1;
+            }
+        }
+
+        for (int i = 0; i < GRID_SIZE; i++) {
+            for (int j = 0; j < GRID_SIZE; j++) {
+                System.out.print((mines[i][j] ? "1" : "0") + ", ");
+            }
+            System.out.println();
+        }
     }
 
     private void calculateNumbers() {

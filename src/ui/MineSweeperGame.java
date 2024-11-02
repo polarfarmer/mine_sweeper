@@ -79,10 +79,6 @@ public class MineSweeperGame extends JFrame {
         for (int i = 0; i < TOTAL_MINES; i++) {
             int x = random.nextInt(GRID_SIZE);
             int y = random.nextInt(GRID_SIZE);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8db2941b0f741d52fc16cf7157047e878fa5b154
             if (!mines[x][y]) {
                 mines[x][y] = true;
             }
@@ -90,8 +86,6 @@ public class MineSweeperGame extends JFrame {
                 i -= 1;
             }
         }
-<<<<<<< HEAD
-=======
 
         for (int i = 0; i < GRID_SIZE; i++) {
             for (int j = 0; j < GRID_SIZE; j++) {
@@ -99,7 +93,6 @@ public class MineSweeperGame extends JFrame {
             }
             System.out.println();
         }
->>>>>>> 8db2941b0f741d52fc16cf7157047e878fa5b154
     }
 
     private void calculateNumbers() {

@@ -86,13 +86,6 @@ public class MineSweeperGame extends JFrame {
                 i -= 1;
             }
         }
-
-        for (int i = 0; i < GRID_SIZE; i++) {
-            for (int j = 0; j < GRID_SIZE; j++) {
-                System.out.print((mines[i][j] ? "1" : "0") + ", ");
-            }
-            System.out.println();
-        }
     }
 
     private void calculateNumbers() {

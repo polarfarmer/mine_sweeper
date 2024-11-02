@@ -65,7 +65,7 @@ public class MineSweeperGame extends JFrame {
                         }
                     }
                 });
-
+                //
                 buttons[row][col] = button;
                 add(button);
                 buttons[row][col].setBackground(Color.LIGHT_GRAY);
